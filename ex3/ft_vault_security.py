@@ -9,8 +9,7 @@ def secure_archive(
         if action == "read":
             with open(filename, "r") as file:
                 data = file.read()
-                print("
-            return (True, data)
+                return (True, data)
         elif action == "write":
             with open(filename, "w") as file:
                 file.write(content)
